@@ -4,11 +4,11 @@
 
 This repository contains a complete VS Code–ready pipeline for finetuning the **GPT-OSS-20B** Mixture-of-Experts (MoE) architecture using [Unsloth](https://github.com/unslothai/unsloth), optimized with LoRA parameter-efficient fine-tuning.
 
-## 📌 Architecture Overview
+## Architecture Overview
 
 ![arch_by_Xiaoli](https://github.com/user-attachments/assets/09b75f71-f9ae-47a6-84c9-501c03ac6748)
 
-Image credit to @ Xiaoli Shen, Senior AI/ML Specialist at Microsoft 
+#### Image credit to @ Xiaoli Shen, Senior AI/ML Specialist at Microsoft 
 
 The GPT-OSS-20B is a **Mixture-of-Experts Transformer model** that integrates:
 - **Embedding Layer** — Converts input tokens into dense vector embeddings.
@@ -32,7 +32,7 @@ This design enables high scalability while reducing compute usage via sparse act
 
 ---
 
-## 🚀 Training
+## Training
 
 You can fine-tune GPT-OSS-20B with LoRA adapters in 4-bit precision:
 
@@ -59,6 +59,8 @@ python scripts/infer.py   --base unsloth/gpt-oss-20b   --adapter outputs   --use
 🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
 Loading checkpoint shards: 100%|█████████████████████████████████████|
 Reasoning: medium
+
+User: Solve x^5 + 3x^4 - 10 = 3
 
 We are given the equation:
 x^5 + 3x^4 - 10 = 3.
@@ -128,3 +130,10 @@ python scripts/infer.py   --base unsloth/gpt-oss-20b   --adapter outputs   --use
 - Uses 4-bit quantization via `bitsandbytes` and Unsloth memory optimizations.
 - `reasoning_effort` is passed to `tokenizer.apply_chat_template`; we fall back if unsupported.
 - To deploy merged weights, modify `infer.py` to call `merge_and_unload()` after loading the adapter.
+
+## 👨‍💼 Author
+
+**Elias Hossain**  
+_Machine Learning Researcher | PhD Student | AI x Reasoning Enthusiast_
+
+[![GitHub](https://img.shields.io/badge/GitHub-EliasHossain001-blue?logo=github)](https://github.com/EliasHossain001)
