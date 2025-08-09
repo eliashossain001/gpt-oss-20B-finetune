@@ -56,10 +56,6 @@ python scripts/infer.py   --base unsloth/gpt-oss-20b   --adapter outputs   --use
 
 **Sample Output:**
 ```
-🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
-Loading checkpoint shards: 100%|█████████████████████████████████████|
-Reasoning: medium
-
 User: Solve x^5 + 3x^4 - 10 = 3
 
 We are given the equation:
