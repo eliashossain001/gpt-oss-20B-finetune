@@ -102,9 +102,7 @@ This project is licensed under the MIT License.
 
 ---
 
-## 🙌 Acknowledgements
-- [Unsloth AI](https://github.com/unslothai/unsloth) for optimization library.
-- [Hugging Face](https://huggingface.co) for datasets and model hosting.
+## Installation and Setup
 
 ```bash
 python -m venv venv
@@ -131,6 +129,12 @@ python scripts/infer.py   --base unsloth/gpt-oss-20b   --adapter outputs   --use
 - `reasoning_effort` is passed to `tokenizer.apply_chat_template`; we fall back if unsupported.
 - To deploy merged weights, modify `infer.py` to call `merge_and_unload()` after loading the adapter.
 
+
+## 🙌 Acknowledgements
+- [Unsloth AI](https://github.com/unslothai/unsloth) for optimization library.
+- [Hugging Face](https://huggingface.co) for datasets and model hosting.
+
+  
 ## 👨‍💼 Author
 
 **Elias Hossain**  
