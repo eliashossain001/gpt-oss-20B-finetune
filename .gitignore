@@ -1,0 +1,73 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environment
+venv/
+.env
+.env.*
+*.env
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Pytest / Coverage
+.coverage
+htmlcov/
+.cache/
+.pytest_cache/
+
+# Logs
+*.log
+logs/
+wandb/
+mlruns/
+
+# Datasets and checkpoints
+data/
+datasets/
+outputs/
+checkpoints/
+runs/
+*.ckpt
+*.pt
+*.bin
+*.safetensors
+
+# Hugging Face cache
+.huggingface/
+huggingface/
+hf_cache/
+~/.cache/huggingface/
+
+# Transformers cache
+transformers_cache/
+~/.cache/torch/
+~/.cache/transformers/
+
+# Model shards
+*.msgpack
+*.h5
+*.hdf5
+*.pkl
+*.npz
+*.npy
+
+# System
+.DS_Store
+Thumbs.db
