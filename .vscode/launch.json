@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Train (configs/train.yaml)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/train.py",
+      "args": [
+        "--config",
+        "configs/train.yaml"
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "HF_HOME": "${workspaceFolder}/.hf"
+      }
+    },
+    {
+      "name": "Infer (adapter=outputs)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/infer.py",
+      "args": [],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}
